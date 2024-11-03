@@ -3,9 +3,9 @@ from math import sqrt
 
 
 class Vector:
-    def __init__(self, x: float, y: float) -> None:
-        self.x = round(x, 2)
-        self.y = round(y, 2)
+    def __init__(self, vector_x: float, vector_y: float) -> None:
+        self.x = round(vector_x, 2)
+        self.y = round(vector_y, 2)
 
     def __add__(self, other: tuple) -> tuple:
         if isinstance(other, Vector):
